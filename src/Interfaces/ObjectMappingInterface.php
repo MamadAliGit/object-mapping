@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Packages\objectMapping\src\Interfaces;
+namespace mamadali\ObjectMapping\Interfaces;
 
 /**
  * Object Mapping interface
@@ -18,8 +18,7 @@ interface ObjectMappingInterface
      *
      * This code map the title attribute in the api to the name attribute in the model
      *
-     * @param string $type
      * @return array
      */
-    public function mapAttributes(string $type) : array;
+    public function mapAttributes() : array;
 }

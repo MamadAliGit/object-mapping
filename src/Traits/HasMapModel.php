@@ -1,9 +1,9 @@
 <?php
 
-namespace mamadali\objectMapping\src\Traits;
+namespace mamadali\ObjectMapping\Traits;
 
-use App\Packages\objectMapping\src\Interfaces\ObjectMappingInterface;
 use http\Exception\InvalidArgumentException;
+use mamadali\ObjectMapping\Interfaces\ObjectMappingInterface;
 
 trait HasMapModel
 {
@@ -18,10 +18,9 @@ trait HasMapModel
     /**
      * to use mapData method your class must be implemented from ObjectMapping interface and declared 'mapAttributes' method
      * @param array $data
-     * @param string $type
      * @return $this
      */
-    public function mapData(array $data, string $type): static
+    public function mapData(array $data): static
     {
         $mapAttributes = $this->mapAttributes();
         foreach (($data ?? []) as $key => $value) {
