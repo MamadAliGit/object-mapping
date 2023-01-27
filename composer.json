@@ -6,7 +6,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mamadali\\ObjectMapping\\": "src/"
+            "mamadali\\ObjectMapping\\": "src/"
         }
     },
     "authors": [
